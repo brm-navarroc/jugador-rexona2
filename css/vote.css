@@ -1,0 +1,19 @@
+main{
+	color: #fff;
+}
+main h5{
+		text-transform: unset;
+		color: #fff;
+		font-weight: 200;
+    	font-size: 0.45rem !important;
+    	text-align:center;
+ }
+
+@media screen and (min-width: 720px){
+
+	
+	
+}
+@media screen and (min-width: 1024px){
+
+}

@@ -1,0 +1,98 @@
+.box{
+		height: 400px;
+		overflow: hidden;
+	}
+	.box .loading{
+	  	color:#fff;
+	  	text-align:center;
+	  	font-size:18px;
+	  	line-height: 200px;
+	  }
+
+	.graph-3{
+		width: 40%;
+		height: 330px;
+		background-color: gray;
+	}
+	.graph-3::before{
+			content: attr(data-content);
+		    position: absolute;
+		    top: -20px;
+		    width: 100%;
+		    text-align: center;
+		    color: #000;
+		    font-weight: 800;
+		    font-size: 0.9em; 
+	}
+		@media screen and (min-width: 720px){
+		     .graph-1, .graph-2, .graph-3{
+		     		top: -30px;	
+		     }
+		 }
+
+	   @media screen and (min-width: 1024px){
+		.box {
+			height: 400px;
+			margin: 1em auto auto auto;
+			position: relative;
+			}
+		.graph-1, .graph-2, .graph-3{
+			border:1px solid orange;
+			top: -40px;		
+			}
+		}
+		.box{
+			display: flex;
+		}
+		.bar{
+			position:relative;
+			min-height: 257px;
+			overflow: hidden;
+			display: flex;
+			justify-content: center;
+			margin-left: 4px;
+		}
+		.graph-3{
+			width: 50px;
+			position: absolute;
+			bottom: 0px;
+			animation: graph-3 4s 1;
+			animation-fill-mode: forwards;
+			opacity: 0.9;
+			top: 50px;
+			background: linear-gradient(to bottom, #ad141e, #521c2b);
+		}
+		@keyframes graph-3{
+		  0%{ 
+				height: 0%;
+				top: 100%;
+		  }
+		  100%{ 
+				height: 100%;
+		  }  
+		}
+
+		.counter-cont{
+			margin-right: 20px;
+		}
+
+		div.player{
+			text-align: center;
+		}
+		div.player h5{
+			/*border-bottom:10px solid pink;*/
+			text-align: center;
+			font-weight: bold;
+			font-size: 14px;
+			margin: 0px;
+		}
+		a{
+			text-decoration: none !important;
+		}
+		div.player a h5.vote{
+			margin: 0px auto;
+			width:70%;
+			border-bottom:5px solid red;
+			font-size: 22px !important;
+			
+		}

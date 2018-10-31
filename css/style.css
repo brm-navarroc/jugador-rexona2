@@ -47,6 +47,16 @@ b{
 	font-weight: 700 !important;
 }
 
+main p{
+		letter-spacing: 0.13rem;
+	    font-size: 0.7rem;
+	    font-weight: 200;
+	    color: #fff;
+	    line-height: 2rem;
+	    padding: 0 1.5rem;
+
+	}
+
 .container{
 	width: 90% !important;
 }
@@ -60,12 +70,38 @@ main{
 	background-size: cover;
 	margin-top: 8vh;
 }
+main#interna{
+	background-image: url('./../assets/img/m-internas.jpg');
+	background-size: cover;
+
+}
+
+.btn-slider{
+	padding: 0.3rem 1rem;
+	border: solid 1px #fff !important;
+	margin: 1rem auto;
+	color: #fff;
+	font-size: 0.7rem !important;
+	font-weight: 700 !important;
+	text-transform: uppercase;
+	background-color: transparent;
+	height: auto;
+}
+
 @media screen and (min-width: 1024px) {
 	.container{
 	width: 70% !important;
 }
-
 main{
-	background-image: none;
+	background-image: url('./../assets/img/d-back-Int.jpg');
 }
+
+main#interna{
+	background-image: url('./../assets/img/d-back-Int.jpg');
+}
+
+main p{
+	    font-size: 0.4rem;
+	    line-height: 0.5rem;
+	}
 }
